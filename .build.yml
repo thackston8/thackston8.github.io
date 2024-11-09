@@ -3,10 +3,10 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
 - hut
 environment:
-  site: thackston.dev 
+  site: cmt.srht.site
 tasks:
 - package: |
     cd $site
     tar -cvz . > ../site.tar.gz
 - upload: |
-    hut pages publish -d $site site.tar.gz
+    hut pages publish -d thackston.dev site.tar.gz
